@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 20px;
+    text-align: center;
+    font: 900 20px Arial;
+}
+body{
+    min-height: 100vh;
+}
+.tela{
+    background: gray;
+    width: 100%;
+    min-height: 84.7vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#form{
+    width: 50%;
+    text-align: center;
+    margin: 10px auto;
+}
+#form input{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+}
+label{
+    font: 600 17px Arial;
+}
+#eventos{
+    display: flex;
+}
+
+#alert p{
+    width: 100%;
+}
+#valor_imc{
+    background: rgb(184, 184, 184);
+    padding: 4px 10px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+#aviso{
+    padding: 0px 10px;
+    margin-left: 4px;
+    font: 700 20px Arial;
+    background-color: white;
+}
+/*segunda pagina sera um painel que será asionado para resultados do IMC*/
+#resultado{
+    margin: 40px 0;
+    height: 70vh;
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+
+    
+}
+#box-resu{
+    position: absolute;
+    width: 40%;
+}
+#result_text, #result_name, #result_imc{
+    background: rgb(211, 209, 209);
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    font: 600 16px Arial;
+}
+#button_fecha{
+    margin: 15px auto;
+    padding: 8px 15px;
+    background: red;
+    color: white;
+    border: none;
+    font: 800 13px Arial;
+    border-radius: 10px;
+    cursor: pointer;
+    
+
+}
+#button_fecha:hover{
+    background: rgb(211, 54, 54);
+    color: black;
+    border: 1px solid black;
+
+}
+.txt_result{
+    font: 800 18px Arial;
+}
+.hidden{
+    display: none;
+    transition: all 2s initial;
+}
+.on{
+    animation: log 1s linear;
+}
+
+#author{
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 40px;
+    font: 900 11px Arial;
+}
+#author a{
+    text-decoration: none;
+    color: black;
+}
+#author a:hover{
+    color: rebeccapurple;
+}
+@keyframes log {
+    0%{
+        opacity: 0;
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 50%;
+    }
+}
+
+@media(max-width: 400px){
+    header h1{
+        font-size: 27px;
+    }
+    #form{
+        width: 80%;
+    }
+    #valor_imc{
+        padding: 4px 5px;
+    }
+    #aviso{
+        padding: 4px 5px;
+        margin-left: 1px;
+        font: 700 16px Arial;
+    }
+    #eventos input{
+        padding: 10px 3px;
+        flex-wrap: wrap;
+    }
+    #box-resu{
+        width: 80%;
+    }
+}
+@media(max-width: 700px){
+    #box-resu{
+        width: 70%;
+    }
+}

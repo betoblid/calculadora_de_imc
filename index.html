@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="herbert souza">
+    <meta name="robots" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site que calcula peso mas sua altura e possa o ICMS para a pessoa tente você também e veja se seu peso está bom">
+    <title>Calculadora - ICMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+    </header>
+    <main>
+        <section class="tela">
+
+            <div class="container-form">
+                <form method="post" id="form">
+                    <label for="cxnome">Nome:</label>
+                    <input type="text" id="cxnome" name="name" placeholder="digite seu nome"  maxlength="20" disabled>
+
+                    <label for="cxpeso">Peso:</label>
+                    <input type="number" id="cxpeso" name="peso" placeholder="digite seu peso" step="0.01" min="1" max="500">
+
+                    <label for="cxaltura">Altura:</label>
+                    <input type="number" id="cxaltura" name="altura" step="0.01" placeholder="digite sua altura" >
+
+                    <p id="eventos">
+                        <input type="submit" id="envia" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                </form>
+            </div>
+            <div id="alert">
+                <p>IMC: 
+                    <span id="valor_imc">23,1</span>
+                    <span id="aviso">aviso</span>
+                </p>
+            </div>
+
+            <div id="box-resu" class="hidden">
+                <div id="resultado" class="">
+                    <span class="txt_result">nome:</span>
+                    <p id="result_name">Anônimo</p>
+                    <span class="txt_result">imc:</span>
+                    <p id="result_imc">23,11</p>
+                    <span class="txt_result">Status imc:</span>
+                    <p id="result_text">sobre peso</p>
+                    <button id="button_fecha">Fechar</button>
+                </div>
+            </div>
+            <div id="author">
+                <p>&copy; - Desenvolvido por <a href="https://www.linkedin.com/in/herbert-souza-220268268/" target="_blank">Herbert souza</a></p>
+            </div>
+        </section>
+    </main>
+
+    <noscript>
+        erro 404
+        <h1>Por favor ative o Javascript para que o site funcine</h1>
+    </noscript>
+    <script src="calcular.js"></script>
+</body>
+</html>
