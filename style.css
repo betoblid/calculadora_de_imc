@@ -12,10 +12,9 @@ body{
     min-height: 100vh;
 }
 .tela{
-    background: gray;
+    background: rgb(231, 68, 68);
     width: 100%;
     min-height: calc(100vh - 86px);
-    box-sizing: border-box;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -31,6 +30,7 @@ body{
     width: 100%;
     padding: 10px 20px;
     margin: 8px 0;
+    border: none;
 }
 label{
     font: 600 17px Arial;
@@ -38,21 +38,11 @@ label{
 #eventos{
     display: flex;
 }
-
-#alert p{
-    width: 100%;
-}
-#valor_imc{
-    background: rgb(184, 184, 184);
-    padding: 4px 10px;
-    font-weight: 600;
-    border-radius: 3px;
-}
-#aviso{
+#aviso, #valor_imc{
     padding: 0px 10px;
     margin-left: 4px;
-    font: 700 20px Arial;
-    background-color: white;
+    font: 700 18px Arial;
+    background: white;
 }
 /*segunda pagina sera um painel que será asionado para resultados do IMC*/
 #resultado{
@@ -64,8 +54,6 @@ label{
     justify-content: center;
     flex-direction: column;
     border-radius: 30px;
-
-    
 }
 #box-resu{
     position: absolute;
@@ -87,14 +75,11 @@ label{
     font: 800 13px Arial;
     border-radius: 10px;
     cursor: pointer;
-    
-
 }
 #button_fecha:hover{
     background: rgb(211, 54, 54);
     color: black;
     border: 1px solid black;
-
 }
 .txt_result{
     font: 800 18px Arial;
