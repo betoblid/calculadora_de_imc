@@ -3,11 +3,11 @@
 
  <div align="center">
     pagina inicial da nossa aplicação 
- <img src="/home.jpeg" width="200" />
+ <img src="/home.jpeg" />
 
  após digitar peso e altura sera feito o calculo e carregara logo em seguida uma janela com uma mensagem do valor do IMC
 
- <img src="/result_up.jpeg" width="200" /> 
+ <img src="/result_up.jpeg" /> 
 
  aqui você poderar consulta o resultado e os status para saber se seu peso está exencial para o seu tamanho e estaturá.
 
